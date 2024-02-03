@@ -2,7 +2,7 @@ function SearchPage () {
 
     return (
         <div>
-            hi
+            hi123
         </div>
     );
 };
