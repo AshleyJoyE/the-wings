@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Team Members: Ashley Etheridge, Elyssa Ratliff, Jeroldine Oakley, Joyce Hsu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Our Project:
+Welcome to Oink, where financial empowerment meets accessibility. We believe that everyone deserves the tools and knowledge to manage their finances effectively, regardless of their background or income level.
 
-## Available Scripts
+Our mission is to provide individuals with free access to essential financial services because we understand the importance of financial stability and independence in achieving personal goals and building a secure future.
 
-In the project directory, you can run:
+Moreover, we're also about education and empowerment. We recognize the value of early financial education, which is why Oink serves as a learning ground for high school students and individuals of all ages to start their journey towards financial literacy.
 
-### `npm start`
+Whether you're a recent graduate navigating your first paycheck, a family striving to make ends meet, or someone planning for retirement, Oink is here to support you every step of the way. Our user-friendly platform and expert resources are designed to demystify finance and empower you to take control of your financial well-being.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lastly, we believe that financial freedom is within reach for everyone. Join us on this journey towards financial stability and independence, and together, let's build a brighter financial future for all.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## What it does:
+This free online platform provides free financial resources in areas, such as budgeting, saving, investing, and/or filing taxes by connecting people with industry professionals/experts on those topics. We hope the connection and knowledge-sharing enable users to make informed decisions and take proactive steps towards their financial goals.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Instruction to Run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Note: $ cd the-wings means that you are inside root directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Step 1: Clone or download Zip of this repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step 2: Installing Node modules
 
-### `npm run eject`
+```bash
+$ cd the-wings
+$ cd server
+$ npm install
+$ cd ..
+$ cd src
+$ npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Step 3: Run initialization and server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+######add the .evn file?????
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+$ start a new terminal window
+$ cd the-wings
+$ cd server
+$ npm i express ongoose nodemon dotenv
+$ npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Step 4: Run Client on a different terminal
 
-## Learn More
+```bash
+$ cd the-wings
+$ cd client
+$ npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits:
+- Flying Pig Logo: 
+    - https://www.vecteezy.com/vector-art/1838742-piggy-savings-with-wings-flying
+    - Author: Andres Ramos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Budget & Saving Icon
+    - https://www.flaticon.com/free-icons/estimate
+    - Author: Muhammad Ali
 
-### Code Splitting
+- Investing Icon
+    - https://www.flaticon.com/free-icons/budget
+    - Author: Eucalyp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Filing Taxes Icon
+    - https://www.flaticon.com/free-icons/tax
+    - Author: Smashicons

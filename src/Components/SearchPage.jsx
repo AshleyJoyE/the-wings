@@ -40,7 +40,7 @@ function SearchPage () {
 
             <div className="sub-container">
                 <div className="sub-title" onClick={handleClickHome}>
-                    <h2>Finance Simplified</h2>
+                    <h2>Brighter Financial Future for All</h2>
                 </div>
 
                 <div className="page-nav">
