@@ -1,0 +1,22 @@
+.list-container {
+    margin-top: 300px;
+}
+
+.list-title {
+    margin-left: 110px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.help-list li{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
