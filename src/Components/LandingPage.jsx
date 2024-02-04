@@ -26,17 +26,17 @@ function LandingPage() {
     return (
         <div className="main">
             <div className="title-container">
-                <div className="title-image">
+                <div className="title-image" onClick={handleClickHome}>
                     <img src={flyingpig} alt="flying pig" />
                 </div>
 
-                <div className="page-title">
+                <div className="page-title" onClick={handleClickHome}>
                     <h1>Oink</h1>
                 </div>
             </div>
 
             <div className="sub-container">
-                <div className="sub-title">
+                <div className="sub-title" onClick={handleClickHome}>
                     <h2>Finance Simplified</h2>
                 </div>
 
@@ -73,7 +73,7 @@ function LandingPage() {
 
             <div className="seminar-container">
                 <h1 className="body-title">Virtual Seminars</h1>
-                <div className="list-container">
+                <div className="seminar-list">
                     <ul>
                         <li>Learn how to budget like a pro!</li>
                         <li>Investing 101</li>
