@@ -91,7 +91,7 @@ function SearchPage () {
             </div>
 
             <div className='container'>
-                <div className="list-container">
+                {/* <div className="list-container">
                     <div className="list-title">Here is a list of professionals offering help:</div>
                     <div className="help-list">
                         <ul>
@@ -114,18 +114,35 @@ function SearchPage () {
                             <li>Professional personnel</li>
                             <li>Professional personnel</li>
                         </ul>
+                    </div>  
+                </div> */}
+                <div className="search-section">
+                    <h2 className="search">Search for Experts Near You</h2>
+                    <div className="zipcode-input">
+                        <label>Zipcode: </label>
+                        <input type="text" placeholder="Enter your zipcode" />
                     </div>
-                    
+                    <br></br>
+                    <br></br>
+                    <div className="distance-dropdown">
+                        <label>Distance: </label>
+                        <select>
+                            <option value="5">5 miles</option>
+                            <option value="10">10 miles</option>
+                            <option value="15">15 miles</option>
+                            <option value="20">20 miles</option>
+                        </select>
+                    </div>
                 </div>
-                <div className="results-container">
-          {data.map((x) => (
-            <Provider key={x.id} data={x} />
-          ))}
-        </div>
-            </div>
-          
 
-            
+                {/* list of providers */}
+                <div className="results-container">
+                    <div className="list-title">Experts Ready to Assist</div>
+                    {data.map((x) => (
+                    <Provider key={x.id} data={x} />
+                    ))}
+                </div>
+            </div>     
         </div>
     );
 };

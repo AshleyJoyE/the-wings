@@ -8,7 +8,7 @@ function Provider({data}){
                 <label className='provider_name' >{data.name}</label>
                 <label className='provider_company' >{data.company}</label>
             </div>
-            <div className='provider_name_and_company_container'>
+            <div className='provider-contact'>
                 <label className='provider_name' >{data.phoneNumber}</label>
                 <label className='provider_company' >{data.email}</label>
             </div>
