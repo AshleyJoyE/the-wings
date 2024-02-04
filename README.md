@@ -1,5 +1,6 @@
 Team Members: Ashley Etheridge, Elyssa Ratliff, Jeroldine Oakley, Joyce Hsu
 
+
 ## Our Project:
 Welcome to Oink, where financial empowerment meets accessibility. We believe that everyone deserves the tools and knowledge to manage their finances effectively, regardless of their background or income level.
 
@@ -12,8 +13,10 @@ Whether you're a recent graduate navigating your first paycheck, a family strivi
 Lastly, we believe that financial freedom is within reach for everyone. Join us on this journey towards financial stability and independence, and together, let's build a brighter financial future for all.
 
 
+
 ## What it does:
 This free online platform provides free financial resources in areas, such as budgeting, saving, investing, and/or filing taxes by connecting people with industry professionals/experts on those topics. We hope the connection and knowledge-sharing enable users to make informed decisions and take proactive steps towards their financial goals.
+
 
 
 ## Instruction to Run:
@@ -52,6 +55,7 @@ $ cd the-wings
 $ cd client
 $ npm start
 ```
+
 
 ## Credits:
 - Flying Pig Logo: 
