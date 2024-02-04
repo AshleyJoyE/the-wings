@@ -1,4 +1,5 @@
 import '../css/HomePage.css';
+import { useNavigate } from 'react-router-dom';
 import flyingpig from '../images/flyingpig.png'
 // import budget from '../images/budget.png'
 import budget2 from '../images/budget2.png'
@@ -6,6 +7,10 @@ import invest from '../images/invest.png'
 import taxes from '../images/taxes.png'
 
 function LandingPage() {
+    const navigate = useNavigate();
+    const handleClickBudget = () => navigate(`/search?service=Budget`);
+    const handleClickInvesting = () => navigate(`/search?service=Invest`);
+    const handleClickTax = () => navigate(`/search?service=Tax`);
     return (
         <div className="main">
             <div className="title-container">
@@ -29,17 +34,17 @@ function LandingPage() {
                 <h1 className="body-title">Services</h1>
 
                 <div className="icon-container">
-                    <button className="icon">
+                    <button className="icon" onClick={handleClickBudget}>
                         <img src={budget2} alt="paper with a calculator" />
                         <label>Budget & Saving</label>
                     </button>
 
-                    <button className="icon">
+                    <button className="icon" onClick={handleClickInvesting}>
                         <img src={invest} alt="bar graph with lines and dollar signs" />
                         <label>Investing</label>
                     </button>
 
-                    <button className="icon">
+                    <button className="icon" onClick={handleClickTax}>
                         <img src={taxes} alt="paper with a check mark" />
                         <label>Filing Taxes</label>
                     </button>
