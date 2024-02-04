@@ -51,12 +51,13 @@
 }
 
 .sub-title h2 {
-    font-size: 24px;
-    margin-left: 120px;
-    margin-top: 5px;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 20px;
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     cursor: pointer;
+    /* font-style: italic; */
 }
 
 .page-nav {
@@ -65,10 +66,10 @@
 }
 
 .nav-item {
-    font-size: 24px;
+    font-size: 22px;
     margin-right: 40px;
-    margin-top: 5px;
-    letter-spacing: 3px;
+    margin-top: 20px;
+    letter-spacing: 2px;
     font-weight: normal;
     cursor: pointer;
 }
@@ -88,7 +89,7 @@
     align-items: center;
     background-color: lightblue;
     height: 50vh;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .icon-container {
@@ -126,7 +127,7 @@
 
 .seminar-container {
     align-items: center;
-    background-color: lightpink;
+    background-color:rgb(220, 237, 243);
     height: 50vh;
     margin-top: 30px;
 }
@@ -141,7 +142,16 @@
 .about-us {
     font-size: 20px;;
     text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
     margin-bottom: 300px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.about-container {
+    background-color:rgb(228, 237, 241);
+    height: 70vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }

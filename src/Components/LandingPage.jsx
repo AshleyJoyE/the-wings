@@ -37,7 +37,7 @@ function LandingPage() {
 
             <div className="sub-container">
                 <div className="sub-title" onClick={handleClickHome}>
-                    <h2>Finance Simplified</h2>
+                    <h2>Brighter Financial Future for All</h2>
                 </div>
 
                 <div className="page-nav">
@@ -85,15 +85,18 @@ function LandingPage() {
             <div id="about-section" className="about-container">
                 <h1 className="body-title">About Us</h1>
                 <div className="about-us">
-                Generating random paragraphs can be an excellent way for writers to 
-                get their creative flow going at the beginning of the day.
-                The writer has no idea what topic the random paragraph will be about when it appears. 
-                This forces the writer to use creativity to complete one of three common writing challenges. 
-                The writer can use the paragraph as the first one of a short story and build upon it. 
-                A second option is to use the random paragraph somewhere in a short story they create. 
-                The third option is to have the random paragraph be the ending paragraph in a short story. 
-                No matter which of these challenges is undertaken, the writer is forced to use creativity to 
-                incorporate the paragraph into their writing.
+                Welcome to Oink, where financial empowerment meets accessibility. We believe that everyone deserves the tools and knowledge to manage their finances effectively, regardless of their background or income level.
+                Our mission is to provide individuals with free access to essential financial services because we understand the importance of financial stability and independence in achieving personal goals and building a secure future.
+                <br></br>
+                <br></br>
+                Moreover, we're also about education and empowerment. We recognize the value of early financial education, which is why Oink serves as a learning ground for high school students and individuals of all ages to start their journey towards financial literacy.
+                <br></br>
+                <br></br>
+                Whether you're a recent graduate navigating your first paycheck, a family striving to make ends meet, or someone planning for retirement, Oink is here to support you every step of the way. Our user-friendly platform and expert resources are designed to demystify finance and empower you to take control of your financial well-being.
+                <br></br>
+                <br></br>
+                Lastly, we believe that financial freedom is within reach for everyone. Join us on this journey towards financial stability and independence, and together, let's build a brighter financial future for all.
+                <br></br>
                 </div>
             </div>
 
