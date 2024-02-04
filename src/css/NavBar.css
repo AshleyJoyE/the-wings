@@ -1,0 +1,17 @@
+.page-nav {
+    display: flex;
+    margin-left: 850px;
+}
+
+.nav-item {
+    font-size: 22px;
+    margin-right: 40px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: lightblue;
+}
