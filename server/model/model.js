@@ -9,23 +9,11 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String
     },
-    street: {
+    phoneNumber: {
         required: true,
         type: String
     },
-    city: {
-        required: true,
-        type: String
-    },
-    zipCode: {
-        required: true,
-        type: String
-    },
-    state: {
-        required: true,
-        type: String
-    },
-    country: {
+    email: {
         required: true,
         type: String
     },
@@ -44,7 +32,9 @@ const dataSchema = new mongoose.Schema({
     logo: {
         required: true,
         type: String
-    },
+    }
+    
+    
 
 
 })

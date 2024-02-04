@@ -12,15 +12,13 @@ router.post('/post', async (req, res) => {
     const data = new Model({
         name: req.body.name,
         company: req.body.company,
-        street: req.body.street,
-        city: req.body.city,
-        zipCode: req.body.zipCode,
-        state: req.body.state,
-        country: req.body.country,
+        phoneNumber: req.body.phoneNumber,
+        email: req.body.email,
         isInvestment: req.body.isInvestment,
         isSaving: req.body.isSaving,
         isTax: req.body.isTax,
-        logo: req.body.logo
+        logo: req.body.logo,
+        location :req.body.location
     })
 
     try {
@@ -43,6 +41,39 @@ router.get('/getAll', async (req, res) => {
     }
 })
 
+//Get Taxes
+router.get('/getTax', async (req, res) => {
+    try {
+        const data = await Model.find({isTax:true});
+        res.json(data)
+    }
+    catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
+
+//Get Budget
+router.get('/getSaving', async (req, res) => {
+    try {
+        const data = await Model.find({isSaving : true});
+        res.json(data)
+    }
+    catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
+
+//Get Investiment
+router.get('/getInvestiment', async (req, res) => {
+    try {
+        const data = await Model.find({isInvestment : true});
+        res.json(data)
+    }
+    catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
+
 
 //Delete by ID Method
 router.delete('/delete/:id', async (req, res) => {
@@ -55,3 +86,4 @@ router.delete('/delete/:id', async (req, res) => {
         res.status(400).json({ message: error.message })
     }
 })
+
