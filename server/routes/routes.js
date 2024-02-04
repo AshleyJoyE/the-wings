@@ -64,7 +64,7 @@ router.get('/getSaving', async (req, res) => {
 })
 
 //Get Investiment
-router.get('/getInvestiment', async (req, res) => {
+router.get('/getInvestment', async (req, res) => {
     try {
         const data = await Model.find({isInvestment : true});
         res.json(data)

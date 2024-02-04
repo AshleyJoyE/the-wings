@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate} from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import flyingpig from '../images/flyingpig.png'
 import '../css/HomePage.css';
 import '../css/SearchPage.css';
+import Provider from './SubComponents/Provider';
 
 function SearchPage () {
     const location = useLocation();
@@ -23,6 +24,44 @@ function SearchPage () {
             aboutSection.scrollIntoView({ behavior: 'smooth' });
         }, 100);
     };
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                if (message === "Tax") {
+                    const response = await fetch("http://localhost:3010/api/getTax");
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    setData(data);
+                } else if (message === "Budget") {
+                    const response = await fetch("http://localhost:3010/api/getSaving");
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    setData(data);
+                } else {
+                    const response = await fetch("http://localhost:3010/api/getInvestment");
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    setData(data);
+                }
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+    
+        fetchData(); 
+    }, [message]); 
+
 
     return (
         <div>
@@ -51,33 +90,40 @@ function SearchPage () {
                 </div>
             </div>
 
-
-            <div className="list-container">
-                <div className="list-title">Here is a list of professionals offering help:</div>
-                <div className="help-list">
-                    <ul>
-                        <li>Professional personnel</li>
-                            <ul>
-                            <li>Company</li>
-                            <li>Address</li>
-                            </ul>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                        <li>Professional personnel</li>
-                    </ul>
+            <div className='container'>
+                <div className="list-container">
+                    <div className="list-title">Here is a list of professionals offering help:</div>
+                    <div className="help-list">
+                        <ul>
+                            <li>Professional personnel</li>
+                                <ul>
+                                <li>Company</li>
+                                <li>Address</li>
+                                </ul>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                            <li>Professional personnel</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                
+                <div className="results-container">
+          {data.map((x) => (
+            <Provider key={x.id} data={x} />
+          ))}
+        </div>
             </div>
+          
 
             
         </div>
