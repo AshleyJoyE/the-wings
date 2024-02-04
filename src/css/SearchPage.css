@@ -1,14 +1,14 @@
 .container {
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    /* flex-direction: row; */
 }
-.list-container {
+/* .list-container {
     margin-top: 300px;
     width: 500;
-}
+} */
 
 .list-title {
-    margin-left: 110px;
+    margin-left: 10px;
     margin-bottom: 40px;
     font-size: 24px;
     text-decoration: underline;
@@ -17,20 +17,42 @@
     text-align: left;
 }
 
-.help-list li{
+/* .help-list li{
     font-size: 20px;
     font-weight: normal;
     letter-spacing: 2px;
     text-align: left;
     margin-left: 80px;
     margin-bottom: 50px;
-}
+} */
 
 .results-container {
     display: flex;
-    margin-top: 300px;
+    margin-top: 270px;
     flex-direction: column; /* or column, depending on your layout */
-    flex: 1
-    
+    flex: 1;    
 }
 
+.search-section {
+    margin-top: 250px;
+    flex: 1;
+    margin-left: 50px;;
+    text-align: left;
+}
+
+.zipcode-input,
+.distance-dropdown {
+    font-size: large;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    margin-left: 70px;
+}
+
+.search {
+    font-size: 24px;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    margin-left: 70px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}

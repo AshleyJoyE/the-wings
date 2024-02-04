@@ -1,22 +1,28 @@
 .container1 {
-    width: 100%;
+    width: 80%;
     height: 100px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-style: outset;
+    border-color: black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .image {
-    width: 10%;
+    width: 100px;
     height: 50px;
+    margin-right: 40px;
 }
 
 .provider_name_and_company_container {
-    margin-left: 15px;
-    flex: 1;
+    margin-left: 10px;
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,10 +39,15 @@
     text-align: left; /* Align text to the left */
 }
 
-.email {
-    /* Add styling for email */
+.provider-contact {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 
-.phone_number {
-    /* Add styling for phone number */
+.provider_phone,
+.provider_email {
+    font-size: medium;
+    text-align: left;
 }
