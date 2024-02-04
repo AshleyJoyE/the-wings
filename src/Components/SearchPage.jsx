@@ -29,17 +29,17 @@ function SearchPage () {
             {/* {message}*/}
 
             <div className="title-container">
-                <div className="title-image">
-                    <img src={flyingpig} alt="flying pig" />
+                <div className="title-image" onClick={handleClickHome}>
+                    <img src={flyingpig} alt="flying pig"/>
                 </div>
 
-                <div className="page-title">
+                <div className="page-title" onClick={handleClickHome}>
                     <h1>Oink</h1>
                 </div>
             </div>
 
             <div className="sub-container">
-                <div className="sub-title">
+                <div className="sub-title" onClick={handleClickHome}>
                     <h2>Finance Simplified</h2>
                 </div>
 
@@ -57,6 +57,10 @@ function SearchPage () {
                 <div className="help-list">
                     <ul>
                         <li>Professional personnel</li>
+                            <ul>
+                            <li>Company</li>
+                            <li>Address</li>
+                            </ul>
                         <li>Professional personnel</li>
                         <li>Professional personnel</li>
                         <li>Professional personnel</li>
